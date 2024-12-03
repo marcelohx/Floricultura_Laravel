@@ -4,17 +4,17 @@
         <thead>
             <tr>
                 <th>Código</th>
-                <th>Nome</th>
-                <th>Tipo</th>
-                <th>Preço</th>
-                <th>Modificar</th>
+                <th>Quantidade</th>
+                <th>Preço Total</th>
+                <th>Data da Compra</th>
+                <th>Forma de Pagamento</th>
             </tr>
         </thead>
         <tbody>
             @foreach($ids as $id)
             <tr>
                 <th>{{$id->id}}</th>
-                <td>{{$id->nome}}</td>
+                <td>{{$id->quantidade}}</td>
                 <td>{{$id->tipo}}</td>
                 <td>{{$id->preco}}</td>
                 <td>

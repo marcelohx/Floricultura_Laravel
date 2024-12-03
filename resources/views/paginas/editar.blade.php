@@ -4,12 +4,16 @@
         <input type="number" id="number" value="{{$dado->id}}" disable required/>
         <br><br>
 
-        <label>Data</label>
-        <input type="date" id="dataEvento" name="dataEvento" value="{{$dado->dataEvento}}" required/>
+        <label>Nome</label>
+        <input type="text" id="nome" name="nome" value="{{$dado->nome}}" required/>
         <br><br>
 
-        <label>Descrição</label>
-        <input type="text" id="descricao" name="descricao" value="{{$dado->descricao}}" required/>
+        <label>Tipo</label>
+        <input type="text" id="tipo" name="tipo" value="{{$dado->tipo}}" required/>
+        <br><br>
+
+        <label>Preco</label>
+        <input type="text" id="preco" name="preco" value="{{$dado->preco}}" required/>
         <br><br>
 
         <button type="submit">Atualizar</button>

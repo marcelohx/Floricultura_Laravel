@@ -1,12 +1,16 @@
 <x-layout titulo="Cadastrar">
     <form action="cadastrar/salvar" method="GET">
         @csrf <!--Libera as portas de cadastro -->
-        <label name="dataCompromisso">Data Compromisso</label>
-        <input type="date" name="dataEvento">
+        <label name="lNome">Nome</label>
+        <input type="text" name="nome">
         <br><br>
 
-        <label name="descricao">Descrição</label>
-        <textArea type="text" name="descricaoTexto"></textArea>
+        <label name="lTipo">Tipo</label>
+        <textArea type="text" name="tipo"></textArea>
+        <br><br>
+
+        <label name="lPreco">Preco</label>
+        <textArea type="decimal" name="preco"></textArea>
         <br><br>
 
         <button type="submit">Salvar</button>
