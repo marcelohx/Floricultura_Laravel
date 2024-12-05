@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\modeloCompras;
+use App\Models\modeloPlantas;
 
-class registrarAtividadeCompra extends Controller
+class registrarAtividadeController extends Controller
 {
     public function index()
     {

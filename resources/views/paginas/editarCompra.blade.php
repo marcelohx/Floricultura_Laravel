@@ -1,22 +1,26 @@
 <x-layout titulo="Editar">
-    <form action="../atualizar/{{$dado->id}}" method="get">
+    <form action="../atualizarCompra/{{$dado->id}}" method="get">
         <label>Id</label>
         <input type="number" id="number" value="{{$dado->id}}" disable required/>
         <br><br>
 
-        <label>Nome</label>
-        <input type="text" id="nome" name="nome" value="{{$dado->nome}}" required/>
+        <label>Quantidade</label>
+        <input type="decimal" id="quantidade" name="quantidade" value="{{$dado->quantidade}}" required/>
         <br><br>
 
-        <label>Tipo</label>
-        <input type="text" id="tipo" name="tipo" value="{{$dado->tipo}}" required/>
+        <label>Preço Total</label>
+        <input type="decimal" id="precoTotal" name="precoTotal" value="{{$dado->precoTotal}}" required/>
         <br><br>
 
-        <label>Preco</label>
-        <input type="text" id="preco" name="preco" value="{{$dado->preco}}" required/>
+        <label>Data da Compra</label>
+        <input type="date" id="dataCompra" name="dataCompra" value="{{$dado->dataCompra}}" required/>
         <br><br>
 
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <label>Forma de Pagamento</label>
+        <input type="text" id="formaPagamento" name="formaPagamento" value="{{$dado->formaPagamento}}" required/>
+        <br><br>
+
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"type="submit">
           Atualizar
         </button>
     </form>
@@ -37,12 +41,10 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
-        <a type="button" class="btn btn-primary" href="/excluir/{{$dado->id}}">Sim</a>
+        <a type="button" class="btn btn-primary" href="/excluirCompra/{{$dado->id}}">Sim</a>
       </div>
     </div>
   </div>
 </div>
-    <a href="/index"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Voltar
-    </button></a>
+    <a href="/index"><button>Voltar</button></a>
 </x-layout>

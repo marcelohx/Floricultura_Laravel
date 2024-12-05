@@ -28,5 +28,7 @@
             @endforeach
         </tbody>
     </table>
-    <a href="index"><button>Voltar</button></a>
+    <a href="index"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Voltar
+    </button></a>
 </x-layout>

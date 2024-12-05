@@ -20,3 +20,10 @@ route::get('/consultar',[\App\Http\Controllers\registrarAtividadeController::cla
 route::get('/editar/{id}',[\App\Http\Controllers\registrarAtividadeController::class,'editar']);
 route::get('/atualizar/{id}',[\App\Http\Controllers\registrarAtividadeController::class,'atualizar']);
 route::get('/excluir/{id}',[\App\Http\Controllers\registrarAtividadeController::class,'excluir']);
+route::get('/cadastrarCompra',[\App\Http\Controllers\registrarAtividadeCompra::class,'index']);
+route::get('/cadastrarCompra/salvar',[\App\Http\Controllers\registrarAtividadeCompra::class,'storeCompra']);
+route::get('/consultarCompra',[\App\Http\Controllers\registrarAtividadeCompra::class,'consultarCompra']);
+route::get('/editarCompra/{id}',[\App\Http\Controllers\registrarAtividadeCompra::class,'editarCompra']);
+route::get('/atualizarCompra/{id}',[\App\Http\Controllers\registrarAtividadeCompra::class,'atualizarCompra']);
+route::get('/excluirCompra/{id}',[\App\Http\Controllers\registrarAtividadeCompra::class,'excluirCompra']);
+
